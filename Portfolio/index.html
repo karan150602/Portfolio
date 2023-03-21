@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5b8fde5bad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Screenshot (55).png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Karan Wahla</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/myPic.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title" id="about-me">About Me</h1>
+            <p>
+              Hi there, I am Karan Wahla . I'm a highly skilled, competent, and
+              diligent individual is seeking an opportunity to establish a
+              career as a pro coder and a SDE . I aspire to strengthen my DSA
+              Concepts . I have a good hold of HTML, CSS, JavaScript and Nodejs
+              . Strong willingness to exhibit my proficiency in these given a
+              professional environment.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('projects')">Projects</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skils">
+              <ol>
+                <li style="color: #fff">
+                  <span>Languages</span><br />
+                  <ul style="color: #ababab">
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </li>
+                <li style="color: #fff"><span>Data Structures</span><br /></li>
+                <li style="color: #fff">
+                  <span>Web Development</span><br />
+                  <ul style="color: #ababab">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Nodejs</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                    <li>ExpressJS</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ol>
+                <li style="color: #fff">
+                  <span>University / College</span><br />
+                  <ul style="color: #ababab">
+                    <li>Guru Tegh Bahadur Institute Of Technology</li>
+                    <li>BTech - Computor Science</li>
+                    <li>Year : 2020 - 2024</li>
+                    <li>C.G.P.A : 9.2</li>
+                    <li>Board : G.G.S.I.P.U</li>
+                  </ul>
+                </li>
+                <li style="color: #fff">
+                  <span>Class XII</span><br />
+                  <ul style="color: #ababab">
+                    <li>Sri Gurur Nanak Public School</li>
+                    <li>Year : 2019 - 2020</li>
+                    <li>Percentage : 86.2%</li>
+                    <li>Board : CBSE</li>
+                  </ul>
+                </li>
+                <li style="color: #fff">
+                  <span>Class X</span><br />
+                  <ul style="color: #ababab">
+                    <li>Sri Gurur Nanak Public School</li>
+                    <li>Year : 2017 - 2018</li>
+                    <li>Percentage : 90.2%</li>
+                    <li>Board : CBSE</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="tab-contents" id="projects">
+              <ol>
+                <li style="color: #fff">
+                  <span
+                    ><a
+                      href="https://glistening-boba-0fe006.netlify.app"
+                      style="color: #fff"
+                      >Tic Tac Toe</a
+                    ></span
+                  ><br />
+                  <p style="color: #ababab">
+                    Its Basically a Tic Tac Toe Game made by me and deployed on
+                    netlify.
+                  </p>
+                </li>
+                <li style="color: #fff">
+                  <span
+                    ><a
+                      href="https://github.com/karan150602/yelpcampProject"
+                      style="color: #fff"
+                      >YelpCamp</a
+                    ></span
+                  ><br />
+                  <p style="color: #ababab">
+                    Its Basically a camp booking website made ny me.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title" id="about-me">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front End Design</h2>
+            <p>
+              A Front-End Developer is someone who creates websites and web
+              applications. The difference between Front-End and Back-End is
+              that Front-End refers to how a web page looks, while back-end
+              refers to how it works. You can think of Front-End as client-side
+              and Back-End as server-side. The basic languages for Front-End
+              Development are HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-codepen"></i>
+            <h2>Backend Design</h2>
+            <p>
+              A back-end developer writes code that forms the backbone of a
+              website or app. Learn more about this career field and how to get
+              started.Back-end developers are the experts who build and maintain
+              the mechanisms that process data and perform actions on websites.
+              Unlike front-end developers, who control everything you can see on
+              a website, back-end developers are involved in data storage,
+              security, and other server-side functions that you cannot see.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Data Structures</h2>
+            <p>
+              A data structure is a method of organizing data in a virtual
+              system. Think of sequences of numbers, or tables of data: these
+              are both well-defined data structures. An algorithm is a sequence
+              of steps executed by a computer that takes an input and transforms
+              it into a target output.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title" id="about-me">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Tic Tac Toe Game</h3>
+              <p>
+                A game in which two players alternately put Xs and Os in
+                compartments of a figure formed by two vertical lines crossing
+                two horizontal lines and each tries to get a row of three Xs or
+                three Os before the opponent does.
+              </p>
+              <a href="https://glistening-boba-0fe006.netlify.app"
+                ><i class="fa-solid fa-gamepad"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Yelp Camp</h3>
+              <p>
+                It is an internet application designed to feature , rate and
+                review different campgrounds, different users(read campers) can
+                put in their comments and concerns, in order that it's a well
+                informed and well prepared camping.
+              </p>
+              <a href="https://github.com/karan150602/yelpcampProject"
+                ><i class="fa-solid fa-campground"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Tic Tac Toe Game</h3>
+              <p>
+                A game in which two players alternately put Xs and Os in
+                compartments of a figure formed by two vertical lines crossing
+                two horizontal lines and each tries to get a row of three Xs or
+                three Os before the opponent does.
+              </p>
+              <a href="https://glistening-boba-0fe006.netlify.app"
+                ><i class="fa-solid fa-gamepad"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">Back</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >karansinghsardar15@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+(91) 7683082479</p>
+            <div class="social-icons" style="color: #fff">
+              <a href="https://www.instagram.com/itz.karan15/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/karanpreet-singh-118244208/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.facebook.com/karan.wahla.10"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://leetcode.com/karan150602/"
+                ><i class="fa-solid fa-terminal"></i
+              ></a>
+            </div>
+            <a href="images/MyResume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-regular fa-copyright"></i> Karan Wahla (2023)
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxPp0SHPAgJtJd8UrMMs57OfDvBAVso1JXt0scubVYr_xsoaPUTrpGNJMiMIAu9dsbO4A/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
